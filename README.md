@@ -1,10 +1,10 @@
-# Modern Login & Signup UI
+# Tutorial from Coding With T
 
-A new Flutter project.
+Modern Login & Signup UI: https://www.youtube.com/watch?v=ShR_aqji3Mg&list=PL5jb9EteFAOD09lmMYsIZwj5JENnqdp-v
 
-## Tutorial from Coding With T
-https://www.youtube.com/watch?v=ShR_aqji3Mg&list=PL5jb9EteFAOD09lmMYsIZwj5JENnqdp-v
+## Getting Started
 
+This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
