@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class TDeviceUtils {
   static void hideKeyboard(BuildContext context) {
@@ -28,7 +27,8 @@ class TDeviceUtils {
   }
 
   static void setFullScreen(bool enable) {
-    SystemChrome.setEnabledSystemUIMode(enable ? SystemUiMode.immersiveSticky : SystemUiMode.edgeToEdge);
+    SystemChrome.setEnabledSystemUIMode(
+        enable ? SystemUiMode.immersiveSticky : SystemUiMode.edgeToEdge);
   }
 
   static double getScreenHeight() {
@@ -66,7 +66,8 @@ class TDeviceUtils {
   }
 
   static Future<bool> isPhysicalDevice() async {
-    return defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS;
+    return defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS;
   }
 
   static void vibrate(Duration duration) {
@@ -74,7 +75,8 @@ class TDeviceUtils {
     Future.delayed(duration, () => HapticFeedback.vibrate());
   }
 
-  static Future<void> setPreferredOrientations(List<DeviceOrientation> orientations) async {
+  static Future<void> setPreferredOrientations(
+      List<DeviceOrientation> orientations) async {
     await SystemChrome.setPreferredOrientations(orientations);
   }
 
@@ -83,7 +85,8 @@ class TDeviceUtils {
   }
 
   static void showStatusBar() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: SystemUiOverlay.values);
   }
 
   static Future<bool> hasInternetConnection() async {
@@ -102,15 +105,6 @@ class TDeviceUtils {
   static bool isAndroid() {
     return Platform.isAndroid;
   }
-
-  static void launchUrl(String url) async {
-    if (await canLaunchUrlString(url)) {
-      await launchUrlString(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
 
 // Add more device utility methods as per your specific requirements.
 }
