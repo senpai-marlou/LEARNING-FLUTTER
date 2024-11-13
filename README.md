@@ -1,10 +1,10 @@
-# prototype
+# Modern Login & Signup UI
 
 A new Flutter project.
 
-## Getting Started
+## Tutorial from Coding With T
+https://www.youtube.com/watch?v=ShR_aqji3Mg&list=PL5jb9EteFAOD09lmMYsIZwj5JENnqdp-v
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
