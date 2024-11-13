@@ -1,6 +1,7 @@
 # Tutorial from Coding With T
 
-Modern Login & Signup UI: https://www.youtube.com/watch?v=ShR_aqji3Mg&list=PL5jb9EteFAOD09lmMYsIZwj5JENnqdp-v
+Modern Login & Signup UI:
+https://www.youtube.com/watch?v=ShR_aqji3Mg&list=PL5jb9EteFAOD09lmMYsIZwj5JENnqdp-v
 
 ## Getting Started
 
